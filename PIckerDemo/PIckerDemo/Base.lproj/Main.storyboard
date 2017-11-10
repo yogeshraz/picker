@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-WN-AYG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Time" borderStyle="roundedRect" placeholder="Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTv-oS-eoL" customClass="RzTextField">
+                                        <rect key="frame" x="19" y="52" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7Sx-IX-Ov2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="BVV-CC-tr7"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNC-fR-ypt" customClass="RzTextField">
+                                        <rect key="frame" x="19" y="128" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="1fv-ah-WuD"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date And Time" borderStyle="roundedRect" placeholder="Date And Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKf-GH-UA8" customClass="RzTextField">
+                                        <rect key="frame" x="19" y="221" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="sMe-K7-fDk"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Fld" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-uY-32I" customClass="RzTextField">
+                                        <rect key="frame" x="19" y="306" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vzr-Oe-OlC"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9f-Y1-yex" customClass="RzTextField">
+                                        <rect key="frame" x="20" y="393" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="1Oz-Fy-EG8"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.38823529410000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cNC-fR-ypt" firstAttribute="top" secondItem="FTv-oS-eoL" secondAttribute="bottom" constant="46" id="18W-3Y-HGS"/>
+                                    <constraint firstItem="aUP-uY-32I" firstAttribute="top" secondItem="PKf-GH-UA8" secondAttribute="bottom" constant="55" id="9S0-lH-XSF"/>
+                                    <constraint firstItem="PKf-GH-UA8" firstAttribute="trailing" secondItem="aUP-uY-32I" secondAttribute="trailing" id="Ir1-DE-siB"/>
+                                    <constraint firstItem="PKf-GH-UA8" firstAttribute="top" secondItem="cNC-fR-ypt" secondAttribute="bottom" constant="63" id="LkW-cG-1x7"/>
+                                    <constraint firstAttribute="trailing" secondItem="FTv-oS-eoL" secondAttribute="trailing" constant="21" id="NMb-8w-edA"/>
+                                    <constraint firstItem="FTv-oS-eoL" firstAttribute="leading" secondItem="cNC-fR-ypt" secondAttribute="leading" id="SgB-Lw-2cc"/>
+                                    <constraint firstItem="p9f-Y1-yex" firstAttribute="leading" secondItem="jBF-WN-AYG" secondAttribute="leading" constant="20" id="VCa-Wp-T6n"/>
+                                    <constraint firstItem="FTv-oS-eoL" firstAttribute="trailing" secondItem="cNC-fR-ypt" secondAttribute="trailing" id="W32-ES-zjq"/>
+                                    <constraint firstItem="FTv-oS-eoL" firstAttribute="top" secondItem="jBF-WN-AYG" secondAttribute="top" constant="52" id="YaX-0R-JrZ"/>
+                                    <constraint firstItem="p9f-Y1-yex" firstAttribute="top" secondItem="aUP-uY-32I" secondAttribute="bottom" constant="57" id="epb-nj-WXc"/>
+                                    <constraint firstItem="cNC-fR-ypt" firstAttribute="leading" secondItem="PKf-GH-UA8" secondAttribute="leading" id="fnP-jr-P93"/>
+                                    <constraint firstItem="cNC-fR-ypt" firstAttribute="trailing" secondItem="PKf-GH-UA8" secondAttribute="trailing" id="iPo-f4-fjV"/>
+                                    <constraint firstItem="p9f-Y1-yex" firstAttribute="centerX" secondItem="jBF-WN-AYG" secondAttribute="centerX" id="o4r-5Z-MVb"/>
+                                    <constraint firstItem="PKf-GH-UA8" firstAttribute="leading" secondItem="aUP-uY-32I" secondAttribute="leading" id="q8H-OR-LSB"/>
+                                    <constraint firstAttribute="bottom" secondItem="p9f-Y1-yex" secondAttribute="bottom" constant="244" id="r5w-F1-jer"/>
+                                    <constraint firstAttribute="trailing" secondItem="p9f-Y1-yex" secondAttribute="trailing" constant="20" id="s3W-KH-COC"/>
+                                    <constraint firstItem="FTv-oS-eoL" firstAttribute="leading" secondItem="jBF-WN-AYG" secondAttribute="leading" constant="19" id="vVf-eO-4h9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jBF-WN-AYG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="21c-Zp-Dar"/>
+                            <constraint firstItem="jBF-WN-AYG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fog-6f-LSf"/>
+                            <constraint firstItem="jBF-WN-AYG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YoU-dA-Uz0"/>
+                            <constraint firstAttribute="trailing" secondItem="jBF-WN-AYG" secondAttribute="trailing" id="ySl-hf-4VV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtFiled1" destination="FTv-oS-eoL" id="gFn-yN-cJF"/>
+                        <outlet property="txtFiled2" destination="cNC-fR-ypt" id="ndg-8Z-l0u"/>
+                        <outlet property="txtFiled3" destination="PKf-GH-UA8" id="alk-fv-EDT"/>
+                        <outlet property="txtFiled4" destination="aUP-uY-32I" id="DWq-Yd-4N7"/>
+                        <outlet property="txtFiled5" destination="p9f-Y1-yex" id="Y5J-Pa-QA0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
